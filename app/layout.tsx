@@ -1,5 +1,6 @@
-import { Metadata } from 'next'
-import Navigation from '../components/navigation'
+import '../styles/global.css'; // global styles 적용
+import { Metadata } from 'next';
+import Navigation from '../components/navigation';
 
 export const metadata : Metadata = {
   title: {

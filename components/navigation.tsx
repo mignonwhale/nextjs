@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import styles from "../styles/navigation.module.css"; // css module 적용, css 파일명.module.css로 작성해야함.
 
 export default function Navigation() {
   const path = usePathname();
   console.log(path);
   return (
-    <nav>
-      <ul>
+    <nav className={styles.nav}> {/* css module 적용, css 작성 시, 클래스를 정의하는 것처럼 "."으로 시작 */}
+      <ul className={styles.list}>
         <li>
           <Link href="/">Home</Link>{path === "/" ? "😩" : ""}
         </li>
