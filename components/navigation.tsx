@@ -9,7 +9,7 @@ export default function Navigation() {
   console.log(path);
   return (
     <nav className={styles.nav}> {/* css module 적용, css 작성 시, 클래스를 정의하는 것처럼 "."으로 시작 */}
-      <ul className={styles.list}>
+      <ul>
         <li>
           <Link href="/">Home</Link>{path === "/" ? "😩" : ""}
         </li>
